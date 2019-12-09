@@ -21,9 +21,7 @@ public class BinarySearch {
     private static int rank(int key, int[] arr) {
         int lo = 0;
         int hi = arr.length -1;
-        int i = 0;
         while(lo <= hi){
-            i++;
             int mid = lo + (hi - lo) / 2;
             if(key < arr[mid]){
                 hi = mid - 1;
